@@ -1,0 +1,689 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+    --font-title: "Bebas Neue", sans-serif;
+    --font-p: "Abel", sans-serif;
+    --background: #F3F3F3;
+    --background-secondary: rgb(67, 67, 231, 0.9);
+    --background-three: #495052;
+    --bg-user: #4C5254;
+}
+
+/* Seccion Header */
+
+header {
+    background-color: var(--background);
+    padding: 1.6rem;
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    text-decoration: none;
+    color: rgb(71, 71, 212);
+    font-family: var(--font-p);
+    font-size: 1.3rem;
+}
+
+header span {
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+
+/* Seccion Iniciar Sesion */
+
+main .conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 88vh;
+}
+
+main .bg {
+    background-color: var(--background-secondary);
+    height: 18rem;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+form {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    background-color: var(--background);
+    width: 24rem;
+    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 3rem 2.2rem;
+    box-shadow: 0px 0px 10px #49505263;
+
+}
+
+form h3 {
+    font-family: var(--font-p);
+    font-size: 2rem;
+    color: black;
+    font-weight: 300;
+}
+
+form input {
+    padding: .6rem;
+    font-family: var(--font-p);
+    border-radius: 1.2rem;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.500);
+}
+
+.btn {
+    text-decoration: none;
+    font-family: var(--font-p);
+    background-color: var(--background-three);
+    padding: .6rem;
+    text-align: center;
+    color: var(--background);
+    border-radius: 1.2rem;
+    margin: .7rem 0;
+    font-size: .9rem;
+}
+
+.btn:hover {
+    background-color: var(--background-secondary);
+    transition: .2s ease-in-out;
+}
+
+.box-flex {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    font-family: var(--font-p);
+}
+
+.box-flex p {
+    font-size: .9rem;
+}
+
+.box-flex .register {
+    font-size: .8rem;
+    color: var(--background-three);
+}
+
+
+.box-flex .register:hover {
+    color: var(--background-secondary);
+    transition: .2s ease-in-out;
+}
+
+/* Seccion home */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 10px #49505263;
+}
+
+/* Seccion buscar */
+
+.box-search {
+    position: relative;
+    width: 60%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.box-search input {
+    border: 1px solid rgba(0, 0, 0, 0.500);
+    padding: .6rem;
+    width: 100%;
+    border-radius: 1.2rem;
+    outline: none;
+}
+
+.box-search i {
+    cursor: pointer;
+    position: absolute;
+    right: .9rem;
+    top: .650rem;
+}
+
+/* Fin Seccion Buscar */
+
+/* Seccion usuario */
+
+.header .box-flex {
+    gap: 1rem;
+}
+
+.header .box-flex a {
+    text-decoration: none;
+    color: var(--background);
+}
+
+.header .bi-search {
+    color: var(--background-three);
+}
+
+.header .flex {
+    display: flex;
+    gap: .4rem;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-three);
+    padding: .4rem .6rem;
+    border-radius: 1rem;
+    height: 2.4rem;
+}
+
+.header .flex .img-user {
+    background-color: var(--background-secondary);
+    border-radius: 50%;
+    padding: .120rem;
+}
+
+.header .flex a {
+    text-decoration: none;
+}
+
+.header i {
+    color: var(--background);
+}
+
+.header .relative {
+    position: relative;
+}
+
+.header .relative .span-cart {
+    position: absolute;
+    color: var(--background);
+    font-size: .70rem;
+    right: -2px;
+    border-radius: 50%;
+    width: 50%;
+    text-align: center;
+    padding: 2px;
+    bottom: 26px;
+    font-family: var(--font-p);
+    background-color: rgb(252, 31, 30);
+}
+
+/* Seccion nav home*/
+
+.nav-page {
+    padding: 6rem 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-three);
+    border-radius: 1rem;
+    /* padding: 1rem 0; */
+}
+
+.box-nav .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .4rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.box-nav .box:hover {
+    background-color: var(--background-secondary);
+    transition: .2s;
+}
+
+#bg-home {
+    height: 15rem;
+}
+
+.box-nav .box i {
+    color: var(--background);
+}
+
+li {
+    list-style: none;
+}
+
+.box-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-nav ul li {
+    width: 7rem;
+    text-align: center;
+}
+
+.box-nav ul li a {
+    font-family: var(--font-p);
+    color: var(--background);
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.box-nav ul li a:hover {
+    color: #e0e0e0;
+    transition: .2s ease-in-out;
+}
+
+.hr-nav {
+    height: 4.6rem;
+    border: 1px solid var(--background);
+    opacity: 60%;
+}
+
+.box i {
+    font-size: 1.6rem;
+}
+
+.box-publicidad {
+    position: relative;
+    bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.publicidad .img {
+    height: 15rem;
+    width: 27.5rem;
+    background-color: rgb(27, 27, 27);
+    border-radius: 1.6rem;
+    background-image: url(https://i.pinimg.com/736x/71/d1/4d/71d14d8c1bd164c0973797c32138e551.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    padding: .6rem;
+}
+
+.publicidad .img-two {
+    background-image: url(./images/hbomax.png);
+
+    background-repeat: no-repeat;
+}
+
+.img-publicidad {
+    background-image: url(./images/disney.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 1rem;
+}
+
+.img-publicidadtwo {
+    background-image: url(./images/hbo.png);
+}
+
+.publicidad h3,
+.publicidad p {
+    color: var(--background);
+    font-family: var(--font-p);
+}
+
+.publicidad .box {
+    padding: 1rem;
+}
+
+.flex-publicidad {
+    display: flex;
+    align-items: center;
+    background-color: #49505285;
+    border-radius: 1rem;
+}
+
+
+
+/* .box-publicidad .publicidad {} */
+
+
+/* Seccion Products */
+
+.section-products {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.section-products h2 {
+    padding: 2rem 0rem 2rem 0rem;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.section-products h2,
+h3 {
+    font-family: var(--font-p);
+}
+
+p {
+    font-family: var(--font-p);
+}
+
+.section-products h3 {
+    font-size: 1rem;
+    padding: 1rem;
+    padding-left: 0;
+}
+
+.section-products .conteiner-products {
+    max-width: 930px;
+    width: 100%;
+    border-radius: 1rem;
+    padding: .4rem;
+}
+
+.section-products .box-products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.section-products .box-products a {
+    text-decoration: none;
+}
+
+.section-products .card {
+    padding: .6rem;
+    background-color: var(--background);
+    border-radius: .6rem;
+    box-shadow: 0px 0px 10px #49505263;
+}
+
+.flex-card {
+    display: flex;
+    color: #080808;
+}
+
+/* .whis {
+    background-position: -40px;
+} */
+
+.conteiner-img .product-2 {
+    background-image: url(./images/product-2.png);
+    background-size: cover;
+}
+
+.img-products {
+    background-image: url(./images/product-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 12rem;
+    border-radius: .6rem;
+}
+
+.product-1 {
+    background-image: url(./images/product-1.png);
+}
+
+.product-2 {
+    background-image: url(./images/product-2.png);
+}
+
+.product-transparent {
+    background-image: url(./images/product-transparent.png);
+    background-size: contain;
+}
+
+.hr-card {
+    border: 1px solid #cececeb6;
+    height: 100%;
+    margin-top: .4rem;
+
+}
+
+.f {
+    display: flex;
+}
+
+.f-2 {
+    flex-direction: column;
+
+    margin-top: 1rem;
+    margin-left: .840rem;
+}
+
+/* Seccion producto */
+
+.box-product {
+    padding: 1.6rem;
+    display: flex;
+    justify-content: center;
+}
+
+.box-p {
+    background-color: #ffffff21;
+    display: flex;
+    border-radius: 1.6rem;
+    padding: .4rem;
+    box-shadow: 0px 10px 10px 0px #4950522a;
+}
+
+.product-two {
+    background-image: url(./images/coca-lata.png);
+}
+
+.a-product {
+    text-decoration: none;
+    display: flex;
+    gap: .2rem;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.815);
+    width: max-content;
+    padding: 1.6rem;
+}
+
+.a-product:hover {
+    color: var(--background-secondary);
+    transition: .2s ease-in-out;
+}
+
+.card-product {
+    display: flex;
+    gap: .6rem;
+    border-radius: 1.6rem;
+}
+
+.box-text {
+    background-color: var(--background);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    padding: 1rem;
+    width: 100%;
+    border: 1px solid #49505252;
+}
+
+.bi-arrow-left-short {
+    font-size: 1.8rem;
+}
+
+.p-gray {
+    color: var(--background-three);
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.img-product {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 28rem;
+    border-radius: 1rem;
+}
+
+.box-product .btn {
+    width: max-content;
+}
+
+/* Seccion cart */
+
+.section-cart {
+    padding: 1.6rem;
+    display: flex;
+    align-items: center;
+    height: 60vw;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+.h2-cart {
+    margin-left: 22rem;
+    width: max-content;
+}
+
+.img-cart {
+    background-image: url(./images/cart-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 4rem;
+    width: 4rem;
+    border-radius: .4rem;
+}
+
+.cart-2 {
+    background-image: url(./images/cart-2.png);
+    background-size: cover;
+    background-position: -4px;
+}
+
+.cart-3 {
+    background-image: url(./images/coca-lata.png);
+}
+
+button {
+    color: var(--background);
+}
+
+.cart-products .box {
+    display: flex;
+    align-items: center;
+}
+
+.separador {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.separador .btn {
+    padding: .5rem 2rem;
+}
+
+.cart-products {
+    max-width: 1200px;
+    background-color: var(--background);
+    display: flex;
+    width: 100%;
+    align-items: center;
+    box-shadow: 0px 10px 10px 0px #4950522a;
+    padding: .8rem;
+    border-radius: .6rem;
+    justify-content: space-between;
+}
+
+.cart-products p {
+    margin-left: 1rem;
+}
+
+.cart-products .box-number {
+    padding: .4rem 1rem;
+    border-radius: 1rem;
+    border: 1px solid var(--background-three);
+    display: flex;
+    gap: 1rem;
+}
+
+.cart-products .box-number button {
+    color: #080808;
+    font-family: var(--font-p);
+    font-weight: 800;
+}
+
+
+.pay {
+    padding-right: .8rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    justify-content: end;
+    max-width: 1200px;
+}
+
+.pay h3 {
+    font-weight: 300;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+
+.pay p {
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-top: 1rem;
+}
+
+.pay .btn {
+    padding: .6rem 1.6rem;
+}
+
+
+
+/* Seccion Footer */
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* padding: 1.6rem 21rem; */
+    padding: 1.6rem 2rem;
+    background-color: var(--background);
+    border-top: 1px solid var(--background-three);
+    font-family: var(--font-p);
+}
+
+footer .box-flex {
+    gap: 2rem;
+}
+
+footer p {
+    color: var(--background-three);
+    font-size: .9rem;
+}
+
+footer i {
+    font-size: 1.6rem;
+    color: var(--background-three);
+    cursor: pointer;
+}
+
+.pointer {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
