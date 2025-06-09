@@ -474,6 +474,8 @@ p {
     border-radius: 1.6rem;
     padding: .4rem;
     box-shadow: 0px 10px 10px 0px #4950522a;
+    max-width: 920px;
+    width: 100%;
 }
 
 .product-two {
@@ -499,6 +501,7 @@ p {
     display: flex;
     gap: .6rem;
     border-radius: 1.6rem;
+    width: 100%;
 }
 
 .box-text {
