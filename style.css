@@ -38,6 +38,10 @@ header span {
     font-size: 1.4rem;
 }
 
+header .none {
+    font-weight: 400;
+}
+
 /* Seccion Iniciar Sesion */
 
 main .conteiner {
@@ -370,7 +374,7 @@ li {
 .section-products {
     display: flex;
     justify-content: center;
-    padding: 2rem;
+    padding: .4rem 2rem;
 }
 
 .section-products h2 {
@@ -714,15 +718,36 @@ footer i {
 @media (max-width: 930px) {
 
 
+    /* Seccion header */
+
+    .header {
+        padding: 1rem;
+    }
+
+    .none {
+        display: none;
+    }
+
+    /* Seccion buscar */
+
+    .box-search {
+
+        margin: 0;
+    }
+
+
+
     /* Seccion nav main */
 
     .nav-page {
-        padding: 4rem 1rem;
+        padding: 1rem;
+    }
 
+    .user-name {
+        display: none;
     }
 
     .box-nav {
-
         width: 100%;
         text-align: start;
     }
@@ -744,6 +769,8 @@ footer i {
         padding: 1rem;
     }
 
+
+
     .hr-nav {
         display: none;
     }
@@ -757,6 +784,86 @@ footer i {
 
     .box-nav ul li {
         width: 0;
+    }
+
+
+    /* Seccion publicidad */
+
+    .box-publicidad {
+        flex-direction: column;
+        top: 2rem;
+        padding: 0 1rem;
+    }
+
+    .publicidad .img {
+        width: 100%;
+        height: 14rem;
+    }
+
+    #bg-home {
+        bottom: -5.4rem;
+    }
+
+    .img-publicidad {
+        height: 4rem;
+        width: 4rem;
+    }
+
+
+    /* Seccion Productos */
+
+
+    .section-products {
+        padding: 0;
+    }
+
+    .section-products .card {
+        display: flex;
+        align-items: center;
+    }
+
+    .section-products .conteiner-products {
+        padding: 1rem;
+    }
+
+    .f {
+        flex-direction: column;
+    }
+
+    .hr-card {
+        display: none;
+    }
+
+    .section-products .card .flex-card {
+        width: 100%;
+    }
+
+    .img-products {
+        height: 10rem;
+        width: 14rem;
+    }
+
+    .product-transparent {
+        background-size: cover;
+    }
+
+    .section-products .box-products {
+        grid-template-columns: 1fr;
+    }
+
+    .section-products h2 {
+        padding-top: 3rem;
+    }
+
+    .section-products h3 {
+        padding: .8rem;
+    }
+
+    /* Seccion footer */
+
+    .conteiner-footer {
+        flex-direction: column;
+        gap: .8rem;
     }
 
 }
