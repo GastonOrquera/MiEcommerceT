@@ -801,7 +801,7 @@ footer i {
     }
 
     #bg-home {
-        bottom: -5.4rem;
+        bottom: -13rem;
     }
 
     .img-publicidad {
@@ -864,6 +864,11 @@ footer i {
     }
 
     /* Seccion products */
+
+
+    .box-product {
+        padding: 1rem;
+    }
 
     .img-product {
         width: 100%;
