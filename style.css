@@ -876,9 +876,9 @@ footer i {
         background-size: cover;
     }
 
-    .box-p {
+    /* .box-p {
         width: max-content;
-    }
+    } */
 
     .card-product {
         flex-direction: column;
