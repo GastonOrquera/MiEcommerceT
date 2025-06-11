@@ -9,7 +9,6 @@
 }
 
 :root {
-    --font-title: "Bebas Neue", sans-serif;
     --font-p: "Abel", sans-serif;
     --background: #F3F3F3;
     --background-secondary: rgb(67, 67, 231, 0.9);
@@ -24,6 +23,11 @@ header {
     padding: 1.6rem;
     display: flex;
     align-items: center;
+}
+
+.a-profile {
+    text-decoration: none;
+    color: var(--background-three);
 }
 
 header .logo {
